@@ -1,0 +1,114 @@
+form {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50x;
+    padding-left: 50px;
+  }
+  
+  .form-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+  }
+  
+  .input-field {
+    width: 400px; /* Adjust width as needed */
+    padding: 5px;
+    border: 1px solid #0FAD8B;
+    border-radius: 4px;
+    
+  }
+  
+  .submit-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0FAD8B;
+    color: white;
+    cursor: pointer;
+  }
+  textarea {
+      width: 100%;
+      padding: 50spx;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      
+  }
+  .status-completed {
+    color: white;
+    background-color:#0FAD8B;
+}
+
+.status-not-completed {
+    color: black;
+    background-color: #FE7D82;
+}
+  .status-filter-container {
+  margin-left: 80vmax;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+
+@media (min-width: 319px) and (max-width: 376px) {
+  .form-container {
+      flex-direction: column; 
+      align-items: start; 
+      gap: 10px; 
+  }
+  .input-field {
+      width: 200px; 
+  }
+}
+
+
+@media (min-width: 376px) and (max-width: 426px) {
+  .form-container {
+      flex-direction: column; /* Stack inputs vertically */
+      align-items: start; /* Center align items */
+      gap: 10px; /* Add gap between inputs */
+  }
+  .input-field {
+      width: 250px; /* Adjust width for slightly larger screens */
+  }
+}
+@media (min-width: 426px) and (max-width: 583px) {
+  .form-container {
+      flex-direction:column; /* Stack inputs vertically */
+      align-items: Start; /* Center align items */
+      gap: 10px; /* Add gap between inputs */
+  }
+  .input-field {
+      width: 300px; 
+      /* Adjust width for slightly larger screens */
+  }
+  
+  }
+  @media (min-width: 583px) and (max-width: 768px) {
+    .form-container {
+        flex-direction:row; /* Stack inputs vertically */
+        align-items: Start; /* Center align items */
+        gap: 10px; /* Add gap between inputs */
+    }
+    .input-field {
+        width: 300px; 
+    }}
+      @media (min-width: 768px) and (max-width: 1025px) {
+          .form-container {
+              flex-direction:row; /* Stack inputs vertically */
+              align-items: Start; /* Center align items */
+              gap: 10px; /* Add gap between inputs */
+          }
+          .input-field .submit-button{
+              width: 150vmax; 
+              /* Adjust width for slightly larger screens */
+          }
+          
+          }
+
+
+  

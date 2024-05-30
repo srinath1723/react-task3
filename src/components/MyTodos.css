@@ -1,0 +1,92 @@
+.todos-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.todo-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.todo-card {
+    background-color: #CCF5D3;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 400px;
+    height: 250px;
+   
+}
+
+
+.todo-status {
+    margin-bottom: 10px;
+}
+
+.todo-status label {
+    margin-right: 5px;
+}
+
+.status-select {
+    padding: 5px;
+    font-size: 14px;
+}
+
+.status-completed {
+    color: white;
+    background-color:#0FAD8B;
+}
+
+.status-not-completed {
+    color: black;
+    background-color: #FE7D82;
+}
+.todo-actions {
+   margin-left: 200px;
+
+    width: 110px;
+    gap: 25px;
+    
+}
+
+.todo-actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo-actions button {
+    background-color: #12AE89;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.todo-actions button:hover {
+    background-color: #12AE89;
+}
+
+.todo-actions button:nth-child(2) {
+    background-color: #CF5D20;
+}
+
+.todo-actions button:nth-child(2):hover {
+    background-color: #CF5D20;
+}
+@media (min-width: 319px) and (max-width: 422px) {
+    .todos-container {
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    
+  }
